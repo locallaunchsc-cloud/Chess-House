@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
+dist/
+build/
+*.egg-info/
+# scratch renders (examples/ is committed on purpose)
+/out/
+*.tmp.svg
