@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1720" viewBox="0 0 1200 1720">
+<rect width="1200" height="1720" fill="#FFFFFF"/>
+<text x="40" y="58" font-size="38" font-weight="bold" font-family="DejaVu Sans, sans-serif">Chess Houses: Legend</text>
+<text x="40" y="94" font-size="20" font-family="DejaVu Sans, sans-serif" fill="#333">Every feature means one thing and is always in the same place. An empty dashed box = that thing is gone.</text>
+<g transform="translate(30,130) scale(0.78)"><rect width="560" height="736" fill="#D6ECFF"/>
+<rect x="0" y="640" width="560" height="96" fill="#3E7B32"/>
+<line x1="280.0" y1="8" x2="280.0" y2="76" stroke="#000000" stroke-width="4"/><rect x="284.0" y="8" width="92" height="40" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="5,4" opacity="0.8"/>
+<rect x="44" y="136" width="472" height="40" fill="#656565" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<rect x="112" y="80" width="30" height="56" fill="#000000" stroke="#000000" stroke-width="3"/>
+<rect x="418" y="80" width="30" height="56" fill="#000000" stroke="#000000" stroke-width="3"/>
+<rect x="44" y="176" width="472" height="16" fill="#888888" stroke="#000000" stroke-width="3"/>
+<rect x="56" y="192" width="448" height="448" fill="#A9A9A9" stroke="#000000" stroke-width="3"/>
+<path d="M68.0,630.0 L68.0,594.0 L75.0,594.0 L75.0,602.0 L81.0,602.0 L81.0,594.0 L87.0,594.0 L87.0,602.0 L93.0,602.0 L93.0,594.0 L100.0,594.0 L100.0,630.0 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<path d="M125.0,632.0 L125.0,607.0 A15,15 0 0 1 155.0,607.0 L155.0,632.0 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<path d="M182.0,632.0 L182.0,608.0 L196.0,590.0 L210.0,608.0 L210.0,632.0 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="252.0" cy="612.0" r="18" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<path d="M295.0,634.0 L295.0,600.0 L295.0,590.0 L302.0,598.0 L308.0,588.0 L314.0,598.0 L321.0,590.0 L321.0,634.0 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<path d="M350.0,632.0 L350.0,608.0 L364.0,590.0 L378.0,608.0 L378.0,632.0 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<path d="M405.0,632.0 L405.0,607.0 A15,15 0 0 1 435.0,607.0 L435.0,632.0 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<path d="M460.0,630.0 L460.0,594.0 L467.0,594.0 L467.0,602.0 L473.0,602.0 L473.0,594.0 L479.0,594.0 L479.0,602.0 L485.0,602.0 L485.0,594.0 L492.0,594.0 L492.0,630.0 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<rect x="72.0" y="544.0" width="24" height="24" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<rect x="128.0" y="544.0" width="24" height="24" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<rect x="184.0" y="544.0" width="24" height="24" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<rect x="240.0" y="544.0" width="24" height="24" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<rect x="296.0" y="544.0" width="24" height="24" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<rect x="352.0" y="544.0" width="24" height="24" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<rect x="408.0" y="544.0" width="24" height="24" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<rect x="464.0" y="544.0" width="24" height="24" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<rect x="72.0" y="264.0" width="24" height="24" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<rect x="128.0" y="264.0" width="24" height="24" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<rect x="184.0" y="264.0" width="24" height="24" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<rect x="240.0" y="264.0" width="24" height="24" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<rect x="296.0" y="264.0" width="24" height="24" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<rect x="352.0" y="264.0" width="24" height="24" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<rect x="408.0" y="264.0" width="24" height="24" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<rect x="464.0" y="264.0" width="24" height="24" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<path d="M68.0,238.0 L68.0,202.0 L75.0,202.0 L75.0,210.0 L81.0,210.0 L81.0,202.0 L87.0,202.0 L87.0,210.0 L93.0,210.0 L93.0,202.0 L100.0,202.0 L100.0,238.0 Z" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<path d="M125.0,240.0 L125.0,215.0 A15,15 0 0 1 155.0,215.0 L155.0,240.0 Z" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<path d="M182.0,240.0 L182.0,216.0 L196.0,198.0 L210.0,216.0 L210.0,240.0 Z" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="252.0" cy="220.0" r="18" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<path d="M295.0,242.0 L295.0,208.0 L295.0,198.0 L302.0,206.0 L308.0,196.0 L314.0,206.0 L321.0,198.0 L321.0,242.0 Z" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<path d="M350.0,240.0 L350.0,216.0 L364.0,198.0 L378.0,216.0 L378.0,240.0 Z" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<path d="M405.0,240.0 L405.0,215.0 A15,15 0 0 1 435.0,215.0 L435.0,240.0 Z" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<path d="M460.0,238.0 L460.0,202.0 L467.0,202.0 L467.0,210.0 L473.0,210.0 L473.0,202.0 L479.0,202.0 L479.0,210.0 L485.0,210.0 L485.0,202.0 L492.0,202.0 L492.0,238.0 Z" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<rect x="56" y="684" width="168" height="26" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+<rect x="336" y="684" width="168" height="26" fill="#FFFFFF" stroke="#000000" stroke-width="3"/></g>
+<circle cx="287.40000000000003" cy="151.84" r="15" fill="#E4002B" stroke="#FFF" stroke-width="2"/><text x="287.40000000000003" y="157.84" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">1</text>
+<circle cx="178.20000000000002" cy="251.68" r="15" fill="#E4002B" stroke="#FFF" stroke-width="2"/><text x="178.20000000000002" y="257.68" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">2</text>
+<circle cx="129.06" cy="214.24" r="15" fill="#E4002B" stroke="#FFF" stroke-width="2"/><text x="129.06" y="220.24" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">3</text>
+<circle cx="248.4" cy="273.52" r="15" fill="#E4002B" stroke="#FFF" stroke-width="2"/><text x="248.4" y="279.52" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">4</text>
+<circle cx="248.4" cy="454.48" r="15" fill="#E4002B" stroke="#FFF" stroke-width="2"/><text x="248.4" y="460.48" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">5</text>
+<circle cx="248.4" cy="644.8000000000001" r="15" fill="#E4002B" stroke="#FFF" stroke-width="2"/><text x="248.4" y="650.8000000000001" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">6</text>
+<circle cx="139.2" cy="673.66" r="15" fill="#E4002B" stroke="#FFF" stroke-width="2"/><text x="139.2" y="679.66" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">7</text>
+<circle cx="459.0" cy="161.2" r="15" fill="#E4002B" stroke="#FFF" stroke-width="2"/><text x="459.0" y="167.2" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">8</text>
+<circle cx="500" cy="143" r="15" fill="#E4002B"/><text x="500" y="149" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">1</text>
+<text x="526" y="150" font-size="20" font-weight="bold" font-family="DejaVu Sans, sans-serif">FLAG (top, right of the pole) = who has more pieces</text>
+<text x="526" y="176" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">Empty dashed box = equal. White flag = White is ahead. Black </text>
+<text x="526" y="198" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">flag = Black is ahead. Number of bars = how many pawns ahead </text>
+<text x="526" y="220" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">(pawn 1, knight 3, bishop 3, rook 5, queen 9). </text>
+<circle cx="500" cy="257" r="15" fill="#E4002B"/><text x="500" y="263" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">2</text>
+<text x="526" y="264" font-size="20" font-weight="bold" font-family="DejaVu Sans, sans-serif">ROOF SHAPE = White's first move</text>
+<text x="526" y="290" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">Triangle = 1.e4 Battlements = 1.d4 Trapezoid = 1.c4 Dome = </text>
+<text x="526" y="312" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">1.Nf3 Flat = no move yet / other. </text>
+<circle cx="500" cy="349" r="15" fill="#E4002B"/><text x="500" y="355" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">3</text>
+<text x="526" y="356" font-size="20" font-weight="bold" font-family="DejaVu Sans, sans-serif">CHIMNEYS = can Black still castle?</text>
+<text x="526" y="382" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">Left chimney = long castle (O-O-O), right chimney = short </text>
+<text x="526" y="404" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">castle (O-O). Filled black = yes. Dashed = no. </text>
+<circle cx="500" cy="441" r="15" fill="#E4002B"/><text x="500" y="447" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">4</text>
+<text x="526" y="448" font-size="20" font-weight="bold" font-family="DejaVu Sans, sans-serif">TRIM BAND = which variation</text>
+<text x="526" y="474" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">Same wall colour + different band = sister openings, e.g. </text>
+<text x="526" y="496" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">yellow + blue band = Najdorf. </text>
+<circle cx="500" cy="533" r="15" fill="#E4002B"/><text x="500" y="539" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">5</text>
+<text x="526" y="540" font-size="20" font-weight="bold" font-family="DejaVu Sans, sans-serif">WALL COLOUR = opening family</text>
+<text x="526" y="566" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">The 8x8 wall IS the board: left to right = a to h, bottom to </text>
+<text x="526" y="588" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">top = 1 to 8. White lives at the bottom, Black at the top. </text>
+<circle cx="500" cy="625" r="15" fill="#E4002B"/><text x="500" y="631" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">6</text>
+<text x="526" y="632" font-size="20" font-weight="bold" font-family="DejaVu Sans, sans-serif">YELLOW DOT under a column = en passant</text>
+<text x="526" y="658" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">A pawn on that column can be captured en passant right now. </text>
+<circle cx="500" cy="695" r="15" fill="#E4002B"/><text x="500" y="701" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">7</text>
+<text x="526" y="702" font-size="20" font-weight="bold" font-family="DejaVu Sans, sans-serif">FENCES = can White still castle?</text>
+<text x="526" y="728" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">Left fence = long castle (O-O-O), right fence = short castle </text>
+<text x="526" y="750" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">(O-O). Filled white = yes. Dashed = no. </text>
+<circle cx="500" cy="787" r="15" fill="#E4002B"/><text x="500" y="793" font-size="17" font-weight="bold" text-anchor="middle" fill="#FFF" font-family="DejaVu Sans, sans-serif">8</text>
+<text x="526" y="794" font-size="20" font-weight="bold" font-family="DejaVu Sans, sans-serif">SKY = whose turn</text>
+<text x="526" y="820" font-size="17" fill="#333" font-family="DejaVu Sans, sans-serif">Light sky = White to move. Dark sky = Black to move. </text>
+<text x="40" y="900" font-size="26" font-weight="bold" font-family="DejaVu Sans, sans-serif">Pieces = shapes on the wall</text>
+<text x="40" y="930" font-size="18" fill="#333" font-family="DejaVu Sans, sans-serif">White piece = white shape with black edge. Black piece = black shape with white edge.</text>
+<rect x="35" y="955" width="150" height="90" fill="#E8B400" stroke="#000" stroke-width="2"/>
+<rect x="66" y="988" width="24" height="24" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<rect x="130" y="988" width="24" height="24" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<text x="110" y="1075" font-size="21" font-weight="bold" text-anchor="middle" font-family="DejaVu Sans, sans-serif">Pawn</text>
+<text x="110" y="1099" font-size="17" text-anchor="middle" fill="#333" font-family="DejaVu Sans, sans-serif">small square</text>
+<rect x="225" y="955" width="150" height="90" fill="#E8B400" stroke="#000" stroke-width="2"/>
+<path d="M253,1020 L253,995 A15,15 0 0 1 283,995 L283,1020 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<path d="M317,1020 L317,995 A15,15 0 0 1 347,995 L347,1020 Z" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<text x="300" y="1075" font-size="21" font-weight="bold" text-anchor="middle" font-family="DejaVu Sans, sans-serif">Knight</text>
+<text x="300" y="1099" font-size="17" text-anchor="middle" fill="#333" font-family="DejaVu Sans, sans-serif">round arch</text>
+<rect x="415" y="955" width="150" height="90" fill="#E8B400" stroke="#000" stroke-width="2"/>
+<path d="M444,1020 L444,996 L458,978 L472,996 L472,1020 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<path d="M508,1020 L508,996 L522,978 L536,996 L536,1020 Z" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<text x="490" y="1075" font-size="21" font-weight="bold" text-anchor="middle" font-family="DejaVu Sans, sans-serif">Bishop</text>
+<text x="490" y="1099" font-size="17" text-anchor="middle" fill="#333" font-family="DejaVu Sans, sans-serif">pointed arch</text>
+<rect x="605" y="955" width="150" height="90" fill="#E8B400" stroke="#000" stroke-width="2"/>
+<path d="M632,1018 L632,982 L639,982 L639,990 L645,990 L645,982 L651,982 L651,990 L657,990 L657,982 L664,982 L664,1018 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<path d="M696,1018 L696,982 L703,982 L703,990 L709,990 L709,982 L715,982 L715,990 L721,990 L721,982 L728,982 L728,1018 Z" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<text x="680" y="1075" font-size="21" font-weight="bold" text-anchor="middle" font-family="DejaVu Sans, sans-serif">Rook</text>
+<text x="680" y="1099" font-size="17" text-anchor="middle" fill="#333" font-family="DejaVu Sans, sans-serif">tower top</text>
+<rect x="795" y="955" width="150" height="90" fill="#E8B400" stroke="#000" stroke-width="2"/>
+<circle cx="838" cy="1000" r="18" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="902" cy="1000" r="18" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<text x="870" y="1075" font-size="21" font-weight="bold" text-anchor="middle" font-family="DejaVu Sans, sans-serif">Queen</text>
+<text x="870" y="1099" font-size="17" text-anchor="middle" fill="#333" font-family="DejaVu Sans, sans-serif">circle</text>
+<rect x="985" y="955" width="150" height="90" fill="#E8B400" stroke="#000" stroke-width="2"/>
+<path d="M1015,1022 L1015,988 L1015,978 L1022,986 L1028,976 L1034,986 L1041,978 L1041,1022 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1079,1022 L1079,988 L1079,978 L1086,986 L1092,976 L1098,986 L1105,978 L1105,1022 Z" fill="#000000" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+<text x="1060" y="1075" font-size="21" font-weight="bold" text-anchor="middle" font-family="DejaVu Sans, sans-serif">King</text>
+<text x="1060" y="1099" font-size="17" text-anchor="middle" fill="#333" font-family="DejaVu Sans, sans-serif">crown door</text>
+<text x="40" y="1160" font-size="26" font-weight="bold" font-family="DejaVu Sans, sans-serif">Roof shape = first move</text><text x="800" y="1160" font-size="26" font-weight="bold" font-family="DejaVu Sans, sans-serif">Sky = whose turn</text>
+<g transform="translate(40,1180) scale(0.22,0.6) translate(0,-76)"><path d="M44,176 L280.0,76 L516,176 Z" fill="#666666" stroke="#000" stroke-width="3" stroke-linejoin="round"/></g>
+<text x="102" y="1270" font-size="18" text-anchor="middle" font-family="DejaVu Sans, sans-serif">1.e4</text>
+<g transform="translate(180,1180) scale(0.22,0.6) translate(0,-76)"><path d="M44,176 L44.0,76 L80.3076923076923,76 L80.3076923076923,116 L116.61538461538461,116 L116.61538461538461,76 L152.9230769230769,76 L152.9230769230769,116 L189.23076923076923,116 L189.23076923076923,76 L225.53846153846155,76 L225.53846153846155,116 L261.8461538461538,116 L261.8461538461538,76 L298.15384615384613,76 L298.15384615384613,116 L334.46153846153845,116 L334.46153846153845,76 L370.7692307692308,76 L370.7692307692308,116 L407.0769230769231,116 L407.0769230769231,76 L443.3846153846154,76 L443.3846153846154,116 L479.69230769230774,116 L479.6923076923077,76 L516.0,76 L516.0,116 L516,176 Z" fill="#666666" stroke="#000" stroke-width="3" stroke-linejoin="round"/></g>
+<text x="242" y="1270" font-size="18" text-anchor="middle" font-family="DejaVu Sans, sans-serif">1.d4</text>
+<g transform="translate(320,1180) scale(0.22,0.6) translate(0,-76)"><path d="M44,176 L114,76 L446,76 L516,176 Z" fill="#666666" stroke="#000" stroke-width="3" stroke-linejoin="round"/></g>
+<text x="382" y="1270" font-size="18" text-anchor="middle" font-family="DejaVu Sans, sans-serif">1.c4</text>
+<g transform="translate(460,1180) scale(0.22,0.6) translate(0,-76)"><path d="M44,176 A236.0,100 0 0 1 516,176 Z" fill="#666666" stroke="#000" stroke-width="3" stroke-linejoin="round"/></g>
+<text x="522" y="1270" font-size="18" text-anchor="middle" font-family="DejaVu Sans, sans-serif">1.Nf3</text>
+<g transform="translate(600,1180) scale(0.22,0.6) translate(0,-76)"><rect x="44" y="136" width="472" height="40" fill="#666666" stroke="#000" stroke-width="3" stroke-linejoin="round"/></g>
+<text x="662" y="1270" font-size="18" text-anchor="middle" font-family="DejaVu Sans, sans-serif">none / other</text>
+<rect x="800" y="1190" width="150" height="56" fill="#D6ECFF" stroke="#000" stroke-width="2"/><text x="875" y="1270" font-size="18" text-anchor="middle" font-family="DejaVu Sans, sans-serif">White to move</text>
+<rect x="990" y="1190" width="150" height="56" fill="#1E1E46" stroke="#000" stroke-width="2"/><text x="1065" y="1270" font-size="18" text-anchor="middle" font-family="DejaVu Sans, sans-serif">Black to move</text>
+<text x="40" y="1330" font-size="26" font-weight="bold" font-family="DejaVu Sans, sans-serif">Wall colour = opening family</text>
+<rect x="40" y="1360" width="60" height="40" fill="#E8B400" stroke="#000" stroke-width="2"/><text x="114" y="1387" font-size="19" font-family="DejaVu Sans, sans-serif">Sicilian</text>
+<rect x="420" y="1360" width="60" height="40" fill="#D2372A" stroke="#000" stroke-width="2"/><text x="494" y="1387" font-size="19" font-family="DejaVu Sans, sans-serif">Italian</text>
+<rect x="800" y="1360" width="60" height="40" fill="#F07800" stroke="#000" stroke-width="2"/><text x="874" y="1387" font-size="19" font-family="DejaVu Sans, sans-serif">Ruy Lopez</text>
+<rect x="40" y="1416" width="60" height="40" fill="#E86F6F" stroke="#000" stroke-width="2"/><text x="114" y="1443" font-size="19" font-family="DejaVu Sans, sans-serif">Open Game (1.e4 e5)</text>
+<rect x="420" y="1416" width="60" height="40" fill="#8A5CD6" stroke="#000" stroke-width="2"/><text x="494" y="1443" font-size="19" font-family="DejaVu Sans, sans-serif">French</text>
+<rect x="800" y="1416" width="60" height="40" fill="#E05AA0" stroke="#000" stroke-width="2"/><text x="874" y="1443" font-size="19" font-family="DejaVu Sans, sans-serif">Caro-Kann</text>
+<rect x="40" y="1472" width="60" height="40" fill="#C9AE6A" stroke="#000" stroke-width="2"/><text x="114" y="1499" font-size="19" font-family="DejaVu Sans, sans-serif">Other 1.e4</text>
+<rect x="420" y="1472" width="60" height="40" fill="#2F6FDB" stroke="#000" stroke-width="2"/><text x="494" y="1499" font-size="19" font-family="DejaVu Sans, sans-serif">Queen's Gambit Declined</text>
+<rect x="800" y="1472" width="60" height="40" fill="#36A3E0" stroke="#000" stroke-width="2"/><text x="874" y="1499" font-size="19" font-family="DejaVu Sans, sans-serif">Queen's Gambit Accepted</text>
+<rect x="40" y="1528" width="60" height="40" fill="#1FA896" stroke="#000" stroke-width="2"/><text x="114" y="1555" font-size="19" font-family="DejaVu Sans, sans-serif">Slav</text>
+<rect x="420" y="1528" width="60" height="40" fill="#3EA63A" stroke="#000" stroke-width="2"/><text x="494" y="1555" font-size="19" font-family="DejaVu Sans, sans-serif">Indian Defences</text>
+<rect x="800" y="1528" width="60" height="40" fill="#7D8A9C" stroke="#000" stroke-width="2"/><text x="874" y="1555" font-size="19" font-family="DejaVu Sans, sans-serif">Other 1.d4</text>
+<rect x="40" y="1584" width="60" height="40" fill="#9A6A3E" stroke="#000" stroke-width="2"/><text x="114" y="1611" font-size="19" font-family="DejaVu Sans, sans-serif">English / Reti</text>
+<rect x="420" y="1584" width="60" height="40" fill="#A9A9A9" stroke="#000" stroke-width="2"/><text x="494" y="1611" font-size="19" font-family="DejaVu Sans, sans-serif">Starting position</text>
+<rect x="800" y="1584" width="60" height="40" fill="#8E8E8E" stroke="#000" stroke-width="2"/><text x="874" y="1611" font-size="19" font-family="DejaVu Sans, sans-serif">Unknown</text>
+</svg>

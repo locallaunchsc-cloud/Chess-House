@@ -1,10 +1,177 @@
-# Chess Houses: Design (draft v0.1)
+# Chess Houses: Design (draft v0.3)
 
-> **Every chess position is a house.** Openings give the house its *family look*
-> (color, roof, trim), and the exact position is written into the *facade*: which
-> windows, doors, bricks and balconies are where. Same position, same house, every time.
+> **Level 1: every main opening is its own house.** Kids learn "the Sicilian is the yellow
+> farmhouse with the outside staircase, the French is the tall Paris house with the slate
+> roof" just by looking. Levels 2+ add houses that change with the actual position.
+
+## Levels at a glance
+
+| Level | What the house shows | Script |
+|---|---|---|
+| **Level 1** | **Which opening** it is. One fixed, hand-designed house per opening. No position details | `prototype/level1.py` |
+| Level 2+ | The **position**: real-house encoding (windows = developed pieces, garage = castled, ...) | `prototype/real_house.py` |
+| Alternates | Facade-grid styles that encode the exact board | `prototype/house.py`, `prototype/simple.py` |
 
 ---
+
+# Level 1: The Opening Neighborhood
+
+## Rules for Level 1 houses
+
+1. **One opening = one house, always the same picture.** Nothing changes with the moves.
+2. **Recognizable from far away.** Every house has a different **silhouette** (tower, dome, lighthouse, mansard, castle, A-shape, stacked boxes ...), a different **main colour**, and 1–2 **signature features**.
+3. **Memorable story.** Where possible the house comes from the opening's name or character (French = Paris, Spanish = hacienda, London = London, Modern = modern house).
+4. **Same scale and ground line** for every house, flat picture-book style, no grid, no labels except an optional name sign.
+
+## The houses
+
+| Opening | House type | Main colour | Signature features | Why |
+|---|---|---|---|---|
+| **Sicilian Defence** (`1.e4 c5`) | Mediterranean farmhouse | sunny yellow | outside stone staircase, blue shutters, lemon tree | Sicily is a sunny Mediterranean island of yellow farmhouses and lemon groves. |
+| **French Defence** (`1.e4 e6`) | Parisian townhouse | Paris blue-grey | mansard roof with round dormers, iron balconies | Tall, narrow Paris buildings with slate mansard roofs are the picture of France. |
+| **Caro-Kann Defence** (`1.e4 c6`) | Cape Cod cottage | pink | two roof dormers, central chimney, white picket fence | A small, tidy, very solid cottage, like the Caro-Kann: safe and sturdy. |
+| **Italian Game** (`1.e4 e5 2.Nf3 Nc6 3.Bc4`) | Tuscan villa | terracotta | square bell tower, arched loggia, cypress trees | Classic Italian countryside villa with a tower, as old and classic as the opening. |
+| **Ruy Lopez (Spanish)** (`1.e4 e5 2.Nf3 Nc6 3.Bb5`) | Spanish hacienda | adobe sand | curvy bell gable, big arched wooden doors, iron window grilles | Ruy Lopez was a Spanish priest: a mission-style hacienda with a bell gable. |
+| **Scandinavian Defence** (`1.e4 d5`) | Nordic cabin | Falu red | grass (sod) roof, white corner trim, birch tree | Red cabins with white trim and grass roofs are iconic in Sweden and Norway. |
+| **Queen's Gambit** (`1.d4 d5 2.c4`) | royal castle | stone grey + royal purple | twin towers with purple cone roofs and flags, crown banner | A queen lives in a castle. The Queen's Gambit is the royal, classical 1.d4 opening. |
+| **London System** (`1.d4 + Bf4`) | London Georgian terrace | dark brick | red phone box, black door with fanlight and white columns | A real London street house, complete with a red telephone box. |
+| **King's Indian Defence** (`1.d4 Nf6 2.c4 g6`) | Indian palace | white marble + teal | huge onion dome, two minarets, pointed arches | A palace fit for an Indian king: big dome, towers, and a reflecting pool. |
+| **English Opening** (`1.c4`) | Tudor cottage | cream + black beams | black-and-white timber beams, steep gable, tall chimney, roses | Old English villages are full of black-and-white Tudor cottages. |
+| **Pirc / Modern Defence** (`1.e4 d6 / 1.e4 g6`) | modern house | charcoal + wood | stacked boxes, flat roofs, floor-to-ceiling glass | It's called the 'Modern' Defence, so it gets a modern house. |
+| **Scotch Game** (`1.e4 e5 2.Nf3 Nc6 3.d4`) | lighthouse cottage | red and white stripes | tall striped lighthouse with a keeper's cottage | Scotland's coast is famous for its lighthouses. |
+
+Sibling idea for later: the **Queen's Gambit Declined / Accepted** can be two versions of
+the same castle (gate closed vs. drawbridge down, "accepting the gift").
+
+## Files
+
+* `examples/level1/neighborhood.png`: all 12 houses with their names (overview poster)
+* `examples/level1/flashcards.png`: printable cards (fold the name under to quiz)
+* `examples/level1/<opening>.png`: each house with its name sign
+* `examples/level1/<opening>_quiz.png`: the same house without the sign
+
+## How kids use Level 1
+
+1. **Meet the neighbors:** walk through the neighborhood poster, one house per opening, with its story ("the French lives in Paris").
+2. **Flashcard quiz:** show a quiz card and the kid names the opening.
+3. **Play the first moves on a real board.** When the moves reach that opening, the kid points to its house.
+4. **Graduate to Level 2:** the same opening family now changes its house as the game goes on.
+
+## Open questions (Level 1)
+
+1. Is this the right set of 12? Candidates to swap in: Vienna, King's Gambit, Dutch, Nimzo-Indian, Grünfeld, Catalan, Petrov.
+2. Should sibling openings share a house (QGD/QGA castles, Pirc vs. Modern)?
+3. Should Level 2 reuse these Level 1 house shapes instead of the generic two-storey house? (Recommended: a French position would then always be the Paris townhouse with its windows changing.)
+
+---
+
+# Level 2+: Real-house mode (position encoding)
+
+
+## 1.1 Idea
+
+The house does **not** try to store the exact board. It tells you the *story* of the
+position in house language: which pieces came out, whether the kings castled, whether the
+centre pawns moved, who is ahead. Those are exactly the things a beginner should
+notice about a chess position. The opening family gives the house its overall look, so
+different openings make clearly different houses.
+
+## 1.2 The mapping
+
+**Whole house**
+
+| House feature | Chess meaning |
+|---|---|
+| Wall colour + wall pattern (clapboard, brick, stone, shingle, stucco, board-and-batten) | Opening family (Sicilian = yellow clapboard, Italian = red brick, QGD = blue stone ...) |
+| Roof shape | White's first move: pointy gable = 1.e4, hip roof = 1.d4, barn (gambrel) roof = 1.c4, flat roof = 1.Nf3, slanted shed = no move yet |
+| Trim colour (window frames, shutters, door, gutter, floor band) | Which variation of the opening (Najdorf = blue trim on a yellow Sicilian house) |
+| Sun / moon (windows glow at night) | White / Black to move |
+| Name sign in the yard | Optional. Hidden in quiz mode (`--no-label`) |
+
+**The two floors: downstairs = White, upstairs = Black.** Each floor has 6 spots,
+left to right in the order the pieces start on the board: **knight · bishop · queen · king · bishop · knight**.
+
+| In a piece's spot | Meaning |
+|---|---|
+| Closed shutters | That piece is still at home |
+| **Round window** | A knight came out |
+| **Square window** | A bishop came out |
+| **Bay window** (sticks out, own little roof) | The queen came out |
+| Bare wall (no window) | That piece was captured |
+| King spot, downstairs = **front door** | **Double doors** = White can still castle both ways; **single door** = one way left, or already castled; **boarded door** = can't castle any more (king stuck in the middle) |
+| King spot, upstairs = **tall arched window(s)** | Same for Black: two tall windows / one / boarded |
+
+**Extras (always in the same place)**
+
+| House feature | Chess meaning |
+|---|---|
+| **Garage** (right side / left side) | White castled short / long |
+| **Chimney** (right / left of the roof) | Black castled short / long |
+| **Front porch with two columns** | White's rooks are connected (nothing between them on the back rank) |
+| **Upstairs balcony railing** | Black's rooks are connected |
+| **Front steps** (0-2) | White's centre pawns (d/e) that moved forward |
+| **Flower boxes** under the upstairs windows (0-2) | Black's centre pawns (d/e) that moved forward |
+| **Garden path** to the street | At least one pawn has been captured: the position has opened up |
+| **Flag in the yard** | Material balance: no flag = equal, white flag = White ahead, dark flag = Black ahead; dots = pawns' worth ahead (P1 N3 B3 R5 Q9) |
+
+Castling is read from the move history. For a bare FEN it is guessed: no rights left and
+the king on a castled square.
+
+**Why these choices.** Round window/knight and square window/bishop come from the user's own
+examples ("three square windows", "three round windows"). The door is the king because everyone
+goes through it, and "double doors = two ways to castle" is easy to remember. A garage on the side
+the king tucked into is a strong visual for "king is safe". Columns hold up the porch the way
+connected rooks protect each other. Steps and flower boxes grow as centre pawns advance, a path
+opens when pawns are traded, and a flag means someone is winning the material battle.
+
+## 1.3 Worked examples (`examples/real/`)
+
+| Opening | What the house looks like |
+|---|---|
+| **Sicilian Najdorf** `1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6` | Yellow clapboard, pointy roof, blue trim. Downstairs: **two round windows** (Nc3, Nd4), bishops' and queen's shutters closed, **double doors**, **one step** (e4). Upstairs: one round window (Nf6), rest shuttered, two tall windows, **one flower box** (d6). **Garden path** (pawns traded on d4). Daytime (White to move). |
+| **Italian Game** `1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5` | Red brick, pointy roof, green trim. Downstairs: **square window + round window on the right** (Bc4, Nf3), double doors, one step. Upstairs: **round window on the left + square window on the right** (Nc6, Bc5), one flower box. No path. |
+| **Queen's Gambit Declined** `1.d4 d5 2.c4 e6 3.Nc3 Nf6` | Blue stone, **hip roof** (1.d4), red trim. Downstairs: round window on the left (Nc3), one step (d4). Upstairs: round window on the right (Nf6), **two flower boxes** (d5 + e6: the solid QGD centre). No path. |
+
+`examples/real/three_openings.png` shows the three side by side without name signs.
+
+### The Najdorf house being built (`examples/real/sicilian_sequence_sheet.png`)
+
+| Move | What changes |
+|---|---|
+| start | Grey-white house, slanted roof, every shutter closed, double doors, two tall windows |
+| 1.e4 | Night. **Roof becomes pointy** (1.e4), walls cream, **one front step** appears |
+| 1...c5 | Day. **House turns yellow: Sicilian.** (c-pawn is not a centre pawn, so no flower box) |
+| 2.Nf3 | Night. Right-hand downstairs shutters open into a **round window** |
+| 2...d6 | Day. **Flower box** appears upstairs |
+| 3.d4 | Night. A second front step |
+| 3...cxd4 | Day. Trim turns green (Open Sicilian). **Garden path** appears. **Dark flag** goes up (Black is a pawn ahead). Back to one step (d-pawn gone) |
+| 4.Nxd4 | Night. The flag comes down (equal again). The f3 knight moved but is still "out", so the house stays the same apart from the flag |
+| 4...Nf6 | Day. Upstairs right shutters open into a **round window** |
+| 5.Nc3 | Night. Downstairs left shutters open into a **round window**: two round windows now |
+| 5...a6 | Day. **Trim turns blue: Najdorf** |
+
+## 1.4 Learning path (real-house mode)
+
+1. **Open the shutters (4+).** Play the first moves; each time a knight or bishop comes out a shutter opens into a round or square window.
+2. **Doors and garages (5+).** Castle and watch the garage appear; lose castling rights and the door gets boarded up.
+3. **House families (6+).** Match house colour and roof to the opening name with signs hidden (`*_quiz.png`).
+4. **Tell the story (7+).** Look at a house and tell what happened: "both knights out, White castled short, Black hasn't castled, pawns were traded".
+5. **Build it yourself (8+).** Given a house, play moves on a real board that make that house.
+
+## 1.5 Open questions (real-house mode)
+
+1. **House styles per family.** Right now families differ by colour, wall pattern and roof. Should each family also get its own building shape (cottage, colonial, ranch, townhouse)?
+2. **Pawn structure detail.** Fianchetto, doubled/isolated pawns and open files aren't shown yet. Candidates are a round tower (fianchetto), a fence (pawn chain) and a mailbox (passed pawn).
+3. **Rooks on open files** could add extra columns (currently columns mean "connected" only).
+4. Should a piece that came out and went **back home** close its shutters again? It currently does, because the house shows the position, not the history.
+5. Does the sign belong in the yard or above the door?
+
+---
+
+# Alternates: facade grid and kid-mode grid
+
+The text below is the v0.1 design. It still describes `house.py` and `simple.py`.
+
 
 ## 1. Goals
 
@@ -86,6 +253,35 @@ An empty square is plain wall.
 With layers 2 and 3 the picture encodes everything in a FEN except the halfmove clock, so
 **house → position is fully reversible.**
 
+
+## 3b. Kid mode ("simple" renderer): built for pattern-recognition brains
+
+Some kids, often autistic kids, recognize patterns extremely well. They do best when the
+picture is **strictly consistent**. `prototype/simple.py` draws the same encoding under
+these rules:
+
+1. **One feature = one meaning, always in the same fixed spot.** Every house uses the
+   identical layout (top to bottom): *flag slot → roof box with 2 chimney slots → trim band →
+   8×8 wall → en-passant strip → 2 fence slots*. The house never moves or resizes.
+   Every roof shape fills the same roof box.
+2. **Nothing decorative.** No sun/moon/stars, smoke, flowers, mortar lines, grid lines,
+   letters, numbers or name sign. If something is drawn, it means something.
+3. **"Gone" stays visible.** A lost castling right or an equal-material flag is drawn as an
+   **empty dashed box in its slot**. It never just disappears, so two houses can be
+   compared slot by slot.
+4. **Flat, high-contrast shapes.** Mid-tone, saturated wall colors. White pieces = white
+   silhouettes with a black edge. Black pieces = black silhouettes with a white edge. Every piece
+   is centered in its (invisible) square.
+5. **One silhouette per piece:** pawn = small square, knight = round arch, bishop = pointed
+   arch, rook = square with 3 battlements, queen = circle, king = tall door with a 3-point crown.
+6. **Small changes are instantly spottable.** One move changes exactly: one shape moves (or
+   disappears on a capture), the sky flips light/dark, and *sometimes* the trim band, flag,
+   chimney, fence or en-passant dot changes. See `examples/simple/spot_the_difference.png`
+   (before/after 5...a6: the a7 square moves down one floor, the band turns green → blue, the sky flips).
+
+The house number (move count) is deliberately **not** shown in kid mode: it doesn't describe
+the position. The one-page legend is `examples/simple/legend.png`.
+
 ## 4. Worked examples
 
 PNG renders live in `examples/`. `*_quiz.png` versions hide the street sign.
@@ -144,11 +340,12 @@ opening tree branch is a street of related houses (same color, different trim).
 * **v3 Games & modes.** Quiz mode, spot-the-difference, rebuild-the-board, "street" view of an opening tree, printable card PDFs.
 * **v4 Art pass.** Illustrated building-part sprites, with the same grid and the same rules. Test with real kids and iterate on which cues they actually use.
 
-## 7. Open design questions
+## 7. Open design questions (grid styles)
 
 1. **Perspective:** always draw from White's side, or flip for a kid playing Black?
 2. **Color budget:** there are ~500 ECO lines but only ~12 clearly distinct kid-friendly colors. Is it OK for the family to come only from *first-level* openings, with variations shown through trim/accents?
 3. **Hand-crafted "hero houses":** should famous positions (Najdorf, Dragon, Ruy Lopez) get special decorations (a dragon weather vane for the Dragon) on top of the rules?
 4. **Leaving book:** keep the last family look forever (current rule), or slowly "fade" the paint as the game drifts from theory?
-5. **Color-blind safety:** add a pattern per family (stripes, polka dots, wood siding) as well as color.
-6. **Halfmove clock** isn't shown yet. Is it worth adding (e.g. grass grows taller)?
+5. **Kid mode details:** should kid mode be the *default* look, with the illustrated house as an optional "fancy" skin? Should the start position get a fixed neutral roof instead of the flat one?
+6. **Color-blind safety:** add a pattern per family (stripes, polka dots, wood siding) as well as color.
+7. **Halfmove clock** isn't shown yet. Is it worth adding (e.g. grass grows taller)?
